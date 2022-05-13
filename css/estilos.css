@@ -1,0 +1,301 @@
+*{margin: 0px;
+ padding: 0px;
+}
+.primer__titulo{font-size: 70px 
+    ;text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+
+.portada__texto{
+    display: flex;
+    color: white;
+    font-size: 18px;
+    font-weight: 300;
+    padding: 15px;
+    text-align: center;   
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+}
+
+.portada__parrafo{
+    font-size: 30px;
+    padding: 15px;
+    margin: 15px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    padding: 10px;
+}
+.header__navegacion{
+text-align: right;
+padding: 20px;
+margin:15px;
+}
+
+li{
+    display: inline;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.header__logo{
+    padding: 80px;
+    margin: 40px;
+    width: 500px;
+    padding: 15px;
+    justify-content: left;
+}
+
+.publicidad{
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+}
+
+.publicidad2__titulo{color: white;
+text-align: center;
+font-size: 40px;
+}
+.publicidad__imagen{
+    padding: 80px;
+    margin: 40px;
+    width: 500px;
+    padding: 15px;
+}
+
+.publicidad2__texto{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px;
+    color: white;
+    text-align: center;
+    
+} 
+
+.footer__disclaimer{
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    background-color: coral;
+    }
+
+    /* contacto */
+
+.titulo{font-size: 70px;
+        text-align: center;
+        background-image: url(../recursos/clavos.jpg);
+        padding: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-bottom: 16px;}
+    
+.header__navegacion--contacto{
+    text-align: right;
+    padding: 20px;
+    margin:0px;
+    background-image: url(../recursos/fondo-gris.jpg);
+}
+
+.datos__titulo{
+    color:rgb(20, 1, 1);
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-bottom: 16px;
+}
+
+.datos__input--contacto{
+    text-align: center;
+    border-radius: 3px;
+    margin: 0 auto;
+    padding: 70px;
+    width: 300px;
+    background-color: white;
+    border-style: solid;
+    border-color: black;
+    border-radius: 3px;
+}
+
+.datos__nombre input{
+    margin: 10px;
+    padding: 15px;
+    width: 300px;
+    
+}
+
+.datos__nombre{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.btn input{
+    margin: 20;
+    padding: 15px;
+    width: 250px;
+    background-color: white;
+    color: rgb(19, 129, 92);
+    border-radius: 3px;
+}
+
+/* sobre-nosotros */
+
+.tittle{font-size: 70px; 
+    text-align: center;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    margin-bottom: 32px;
+}
+
+.fondo{
+    background-image: url(../recursos/fondo-gris.jpg);
+}
+
+.mision__div{
+    display: flex;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    color: white;
+    align-items: center;
+    font-weight: 300px;
+}
+
+.mision2__texto{
+    text-align: center;
+}
+
+.mision2__subtitulo{
+    text-align: center;
+    padding: 15px;
+}
+
+.trayectoria{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.trayectoria__subtitulo{
+    color: white;
+    text-align: center;
+    font-size: 40px;
+}
+
+.trayectoria__imagen{
+    
+    width: 450px;
+}
+
+.trayectoria__parrafo{
+    font-size: 30px;
+    color: white;
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+/* iniciar sesion */
+
+.datos__input{
+    text-align: center;
+    border-radius: 3px;
+    margin: 0 auto;
+    padding: 70px;
+    width: 300px;
+    background-color:transparent;
+    border-style: solid;
+    border-color: black;
+    border-radius: 3px;
+    margin-bottom: 150px;
+}
+
+.datos__name input
+{margin: 10px;
+padding: 15px;
+width: 200px;
+font-family: Arial, Helvetica, sans-serif;
+margin-bottom: 16px;
+}
+
+.titulo__inicio
+{   font-size: 70px;
+    text-align: center;
+    background-image: url(../recursos/clavos.jpg);
+    padding: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 150px;}
+
+/* productos*/
+.productos{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.productos__empresa{
+    display: flex;
+    align-items: center;
+    font-weight: 300px;
+}
+
+
+
+
+
+
+
+
+
+/* grids */
+
+.grid__container{
+    display: grid;
+    grid-template-rows: 150px 150px 150px 150px;
+    grid-template-columns: 1fr 1 fr 1 fr;
+    gap: 15px;
+    border: solid black;
+
+}
+
+.grid__item{
+    border: solid red;
+}
+
+.grid__uno{
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+
+
+.grid__cuatro{
+    grid-row: 2/5;
+    grid-column: 2/3;
+    background-image: url(../recursos/naruto.jpg);
+    background-position: inherit;
+    background-size:cover ;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.grid__cinco{
+    grid-row: 2/4;
+    grid-column: 3/4;
+    background-image: url(../recursos/sasuke.jpg);
+    background-position: inherit;
+    background-size: cover;
+}
+
+.grid__seis{
+    grid-row: 3/6;
+    background-image: url(../recursos/kakashi.jpg);
+    background-size: cover;
+    background-position: inherit;
+}
+
+
+
