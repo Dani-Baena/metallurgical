@@ -46,8 +46,6 @@ a{
     margin: 0 0.5rem;
     animation-name: backInDown;
     animation-duration: 2s;
-
-    
 }
 
 .portada__texto2{
@@ -66,7 +64,6 @@ a{
     display: flex;
     flex-direction: column;
     text-align: center;
-    
 }
 
 .inicio__grid{
@@ -94,7 +91,7 @@ a{
     align-items: center;
     background-image: url(../recursos/fondo-gris.jpg);
     color: white;
-    padding: 1%;
+    padding: 1.8%;
     font-family: Arial, Helvetica, sans-serif;
     }
 
@@ -108,11 +105,22 @@ a{
         font-family: Arial, Helvetica, sans-serif;
         margin-bottom: 1%;}
     
-.header__navegacion--contacto{
+/* .header__navegacion--contacto{
     text-align: right;
     padding: 1%;
     background-image: url(../recursos/fondo-gris.jpg);
     font-family: Arial, Helvetica, sans-serif;
+} */
+
+.bg-pink{
+    text-align: right;
+    padding: 1%;
+    background-image: url(../recursos/fondo-gris.jpg);
+    color: white;
+}
+
+.link-nav{
+    color: white;
 }
 
 ul li a:hover{
@@ -134,6 +142,12 @@ ul li a:hover{
     background-color: white;
     border-style: solid;
     border-color: black;
+}
+
+
+
+.main-inicio{
+    margin: 10%;
 }
 
 .datos__nombre input{
@@ -206,6 +220,25 @@ ul li a:hover{
     animation-duration: 2s;
 }
 
+.col{
+   
+    border-radius: 15px;
+    border-style: solid;
+    color: black;
+    gap:15px
+}
+
+.header {
+    color: #36A0FF;
+    font-size: 27px;
+    padding: 10px;
+}
+
+.bigicon {
+    font-size: 35px;
+    color: #36A0FF;
+}
+
 .trayectoria__subtitulo{
     color: white;
     text-align: center;
@@ -226,6 +259,20 @@ ul li a:hover{
 
 /* iniciar sesion */
 
+.formulario{
+    margin: auto;
+    text-align: center;
+    border-radius: 2%;
+    padding:5rem;
+    width: 50rem;
+    background-color: white;
+    border-style: solid;
+    border-color: black;
+}
+
+.barra{
+    width: 30rem;
+}
 .datos__input{
     text-align: center;
     border-radius: 5%;
