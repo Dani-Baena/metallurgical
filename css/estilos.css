@@ -264,14 +264,14 @@ ul li a:hover{
     text-align: center;
     border-radius: 2%;
     padding:5rem;
-    width: 50rem;
+    width: 30rem;
     background-color: white;
     border-style: solid;
     border-color: black;
 }
 
 .barra{
-    width: 30rem;
+    width: 20rem;
 }
 .datos__input{
     text-align: center;
@@ -388,6 +388,15 @@ header{
 /* media */
 
 @media (min-width: 320px) and (max-width: 540px){
+
+.formulario{  
+    width: 15rem;
+}
+
+.barra{
+    width: 10rem;
+}
+   
     .inicio{
         grid-template-columns: 1fr;
         grid-template-rows: 0.5fr 1fr; 
