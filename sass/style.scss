@@ -1,0 +1,528 @@
+*{margin: 0px;
+    padding: 0px;
+   }
+   .inicio{
+       display: grid;
+       grid-template-columns: repeat(2, 1fr);
+       grid-template-rows: 0.5fr 1fr; 
+       grid-template-areas: 
+       
+       "inicio__titulo inicio__titulo"
+       "portada__texto portada__texto2"
+      ;
+   }
+   
+   ul{
+       list-style-type: none;
+   }
+   
+   li{
+       padding: 1%;
+       display: inline;
+   }
+   
+   a{
+       text-decoration: none;
+       color: white;
+   }
+   
+   .inicio__titulo{
+       grid-area: inicio__titulo;
+       font-size: 500%;
+       text-align: center;
+       color: white;
+       font-family: Arial, Helvetica, sans-serif;
+       margin: 2%;
+   }
+      
+   
+   .portada__texto{
+       grid-area: portada__texto;
+       display: flex;
+       flex-direction: column;
+       color: white;
+       font-size: 200%;
+       text-align: center;
+       margin: 0 0.5rem;
+       animation-name: backInDown;
+       animation-duration: 2s;
+   }
+   
+   .portada__texto2{
+       grid-area: portada__texto2;
+       display: flex;
+       flex-direction: column;
+       text-align: center; 
+       color: white;
+       font-size: 150%;
+       margin: 0 0.5rem;
+       animation-name: backInDown;
+       animation-duration: 2s;
+   }
+   
+   .publicidad2__titulo{
+       display: flex;
+       flex-direction: column;
+       text-align: center;
+   }
+   
+   .inicio__grid{
+       padding: 3%;
+       align-items: center;
+   }
+   
+   .inicio__grid img{
+       display: flex;
+       align-items: center;
+       width: 85%;
+       height: 80%;
+   }
+       
+   
+   .portada__parrafo{
+       grid-area: portada__parrafo;
+       display: flex;
+       text-align: center;
+   }
+   
+   
+   .footer__disclaimer{
+       text-align: center;
+       align-items: center;
+       background-image: url(../recursos/fondo-gris.jpg);
+       color: white;
+       padding: 1.8%;
+       font-family: Arial, Helvetica, sans-serif;
+       }
+   
+       /* contacto */
+   
+   .titulo{font-size: 350%;
+           width: 100%;
+           text-align: center;
+           background-image: url(../recursos/clavos.jpg);
+           padding:3%;
+           font-family: Arial, Helvetica, sans-serif;
+           margin-bottom: 1%;}
+       
+   /* .header__navegacion--contacto{
+       text-align: right;
+       padding: 1%;
+       background-image: url(../recursos/fondo-gris.jpg);
+       font-family: Arial, Helvetica, sans-serif;
+   } */
+   
+   .bg-pink{
+       text-align: right;
+       padding: 1%;
+       background-image: url(../recursos/fondo-gris.jpg);
+       color: white;
+   }
+   
+   .link-nav{
+       color: white;
+   }
+   
+   ul li a:hover{
+       color:rgb(75, 75, 136) ;
+   }
+   .datos__titulo{
+       color:rgb(20, 1, 1);
+       text-align: center;
+       font-family:Arial, Helvetica, sans-serif;
+       margin-bottom: 2%;
+   }
+   
+   .datos__input--contacto{
+       text-align: center;
+       border-radius: 2%;
+       margin: 0 auto;
+       padding:5%;
+       width: 20%;
+       background-color: white;
+       border-style: solid;
+       border-color: black;
+   }
+   
+   
+   
+   .main-inicio{
+       margin: 10%;
+   }
+   
+   .datos__nombre input{
+       margin: 3%;
+       padding: 5%;
+       width: 100%;
+   }
+   
+   .datos__nombre{
+       font-family: Arial, Helvetica, sans-serif;
+   }
+   
+   .comentario{
+       width: 100%;
+   }
+   
+   
+   .btn input{
+       padding: 5%;
+       width: 50%;
+       background-color: white;
+       color: rgb(19, 129, 92);
+       border-radius: 5%;
+   }
+   
+   /* sobre-nosotros */
+   .imagen1{
+       padding: 2%;
+   }
+   .tittle{
+       font-size: 500%; 
+       text-align: center;
+       color:white;
+       font-family: Arial, Helvetica, sans-serif;
+       padding: 1%;
+       margin-bottom: 3%;
+   }
+   
+   .fondo{
+       background-color: rgb(69, 58, 58);
+   }
+   
+   .mision__div{
+       display: flex;
+       font-family:Arial, Helvetica, sans-serif;
+       font-size: 250%;
+       color: white;
+       align-items: center;
+       margin: 0 0.5rem;
+       animation-name: backInLeft;
+       animation-duration: 2s;
+   
+   }
+   
+   .mision2__texto{
+       text-align: center;
+   }
+   
+   .mision2__subtitulo{
+       text-align: center;
+       padding: 5%;
+   }
+   
+   .trayectoria{
+       display: flex;
+       justify-content: right;
+       align-items: center;
+       margin: 0 0.5rem;
+       animation-name: backInRight;
+       animation-duration: 2s;
+   }
+   
+   .col{
+      
+       border-radius: 15px;
+       border-style: solid;
+       color: black;
+       
+   }
+   
+   .header {
+       color: #36A0FF;
+       font-size: 27px;
+       padding: 10px;
+   }
+   
+   .bigicon {
+       font-size: 35px;
+       color: #36A0FF;
+   }
+   
+   .trayectoria__subtitulo{
+       color: white;
+       text-align: center;
+       font-size: 250%;
+   }
+   
+   .trayectoria__imagen{
+       width: 25%;
+   }
+   
+   .trayectoria__parrafo{
+       font-size: 170%;
+       color: white;
+       padding: 3%;
+       font-family: Arial, Helvetica, sans-serif;
+       text-align: center;
+   }
+   
+   /* iniciar sesion */
+   
+   .formulario{
+       margin: auto;
+       text-align: center;
+       border-radius: 2%;
+       padding:5rem;
+       width: 30rem;
+       background-color: white;
+       border-style: solid;
+       border-color: black;
+   }
+   
+   .barra{
+       width: 20rem;
+   }
+   .datos__input{
+       text-align: center;
+       border-radius: 5%;
+       margin: 0 auto;
+       padding: 5%;
+       width: 20%;
+       background-color:transparent;
+       border-style: solid;
+       border-color: black;
+       margin-bottom: 7.5%;
+   }
+   
+   .datos__name input{
+       margin: 5%;
+       padding: 5%;
+       width: 50%;
+       font-family: Arial, Helvetica, sans-serif;
+       margin-bottom: 5%;
+   }
+   
+   .titulo__inicio{
+       font-size: 350%;
+       text-align: center;
+       background-image: url(../recursos/clavos.jpg);
+       padding: 3%;
+       font-family: Arial, Helvetica, sans-serif;
+       margin-bottom: 5%;
+   }
+   
+   
+   /* productos*/
+   .productos{
+       display: grid;
+       grid-template-columns: repeat(3, 1fr);
+       grid-template-areas: 
+       "header header header"
+       "titulo__productos titulo__productos  titulo__productos "
+       "productos__empresa1 productos__empresa2 productos__empresa3"
+       "productos__empresa4 productos__empresa5 productos__empresa6"
+       "productos__empresa7 productos__empresa8 productos__empresa9"
+       "footer footer footer";
+   }
+   .boton{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       color: green;
+   }
+   
+   
+   header{
+       grid-area: header;
+   }
+   
+   .titulo__productos{
+       grid-area: titulo__productos;
+       text-align: center;
+       margin: 20px;
+   }
+   
+   .estilo__productos{
+       display: flex;
+       justify-content: center;
+       margin: 1%;
+   }
+   
+   .estilo__productos img{
+       border-radius: 15px;
+       border-style: solid;
+       color: black;
+       width: 50%;
+   }
+   
+   .productos__empresa1{
+       grid-area: productos__empresa1;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
+   
+   .productos__empresa2{
+       grid-area: productos__empresa2;
+   }
+   
+   .productos__empresa3{
+       grid-area: productos__empresa3;
+   }
+   
+   .productos__empresa4{
+       grid-area: productos__empresa4;
+   }
+   
+   .productos__empresa5{
+       grid-area: productos__empresa5;
+   }
+   
+   .productos__empresa6{
+       grid-area: productos__empresa6;
+   }
+   
+   .productos__empresa7{
+       grid-area: productos__empresa7;
+   }
+   
+   .productos__empresa8{
+       grid-area: productos__empresa8;
+   }
+   
+   .productos__empresa9{
+       grid-area: productos__empresa9;
+   }
+   
+   /* media */
+   
+   @media (min-width: 320px) and (max-width: 540px){
+   
+   .formulario{  
+       width: 15rem;
+   }
+   
+   .barra{
+       width: 10rem;
+   }
+      
+       .inicio{
+           grid-template-columns: 1fr;
+           grid-template-rows: 0.5fr 1fr; 
+           grid-template-areas: 
+           
+           "inicio__titulo "
+           "portada__texto"
+           "portada__texto2";
+           
+       }
+       .productos{
+           grid-template-columns: 1fr;
+           grid-template-areas: 
+           "header__navegacion--contacto"
+           "titulo__productos"
+           "productos__empresa1"
+           "productos__empresa2"
+           "productos__empresa3"
+           "productos__empresa4"
+           "productos__empresa5"
+           "productos__empresa6"
+           "productos__empresa7"
+           "productos__empresa8"
+           "productos__empresa9"
+           "footer";
+       }
+   
+       .mision__div{
+           flex-direction: column;
+   
+       }
+       
+       .trayectoria{
+           flex-direction: column-reverse;
+       }
+   
+       .trayectoria__imagen{
+           flex-direction: column;
+       }
+   
+       .header__navegacion--contacto ul{
+           display: flex;
+           justify-content: center;
+           flex-direction: column;
+       }
+   
+       .datos__input--contacto{
+           align-items: center;
+           width: 60%;
+       }
+       .datos__nombre input{
+           align-items: center;
+           width:70%;
+       }
+     
+       /* iniciar sesion */
+       .datos__input{
+           align-items: center;
+           width: 60%;
+       }
+   }
+   
+   @media (min-width: 541px) and (max-width: 720px){
+       .inicio{
+           grid-template-columns: 1fr;
+           grid-template-rows: 0.5fr 1fr; 
+           grid-template-areas: 
+           
+           "inicio__titulo "
+           "portada__texto"
+           "portada__texto2";
+           
+       }
+       .mision{
+          
+           flex-direction: column;
+           justify-content: center;
+       }
+   
+       .mision__div{
+           flex-direction: column;
+   
+       }
+   
+       .trayectoria{
+           flex-direction: column-reverse;
+       }
+   
+   
+       
+       .productos{
+           grid-template-columns: repeat(2, 1fr);
+           grid-template-areas: 
+           "header__navegacion--contacto header__navegacion--contacto"
+           "titulo__productos titulo__productos"
+           "productos__empresa1 productos__empresa2"
+           "productos__empresa3 productos__empresa4"
+           "productos__empresa5 productos__empresa6"
+           "productos__empresa7 productos__empresa8"
+           "productos__empresa9 productos__empresa9"
+           "footer footer";
+       }
+   
+       .header__navegacion--contacto ul{
+           display: flex;
+           justify-content: center;
+           flex-direction: column;
+       }
+   
+       .datos__input--contacto{
+           align-items: center;
+           width: 50%;
+       }
+   
+       .datos__nombre input{
+           align-items: center;
+           width:70%;
+       }
+   
+       .comentario{
+           width: 50%;
+       }
+       /* iniciar sesion */
+   
+       .datos__input{
+           align-items: center;
+           width: 70%;
+       }
+   }

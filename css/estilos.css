@@ -28,7 +28,7 @@ a{
 
 .inicio__titulo{
     grid-area: inicio__titulo;
-    font-size: 500%;
+    font-size: 5rem;
     text-align: center;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
@@ -41,7 +41,7 @@ a{
     display: flex;
     flex-direction: column;
     color: white;
-    font-size: 200%;
+    font-size: 2rem;
     text-align: center;
     margin: 0 0.5rem;
     animation-name: backInDown;
@@ -54,13 +54,14 @@ a{
     flex-direction: column;
     text-align: center; 
     color: white;
-    font-size: 150%;
+    font-size: 2rem;
     margin: 0 0.5rem;
     animation-name: backInDown;
     animation-duration: 2s;
 }
 
 .publicidad2__titulo{
+    font-size: 2rem;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -80,6 +81,7 @@ a{
     
 
 .portada__parrafo{
+    font-size: 1.5rem;
     grid-area: portada__parrafo;
     display: flex;
     text-align: center;
@@ -94,24 +96,6 @@ a{
     padding: 1.8%;
     font-family: Arial, Helvetica, sans-serif;
     }
-
-    /* contacto */
-
-.titulo{font-size: 350%;
-        width: 100%;
-        text-align: center;
-        background-image: url(../recursos/clavos.jpg);
-        padding:3%;
-        font-family: Arial, Helvetica, sans-serif;
-        margin-bottom: 1%;}
-    
-/* .header__navegacion--contacto{
-    text-align: right;
-    padding: 1%;
-    background-image: url(../recursos/fondo-gris.jpg);
-    font-family: Arial, Helvetica, sans-serif;
-} */
-
 .bg-pink{
     text-align: right;
     padding: 1%;
@@ -126,8 +110,10 @@ a{
 ul li a:hover{
     color:rgb(75, 75, 136) ;
 }
+/* contacto */
 .datos__titulo{
-    color:rgb(20, 1, 1);
+    font-size: 2rem;
+    color: white;
     text-align: center;
     font-family:Arial, Helvetica, sans-serif;
     margin-bottom: 2%;
@@ -138,36 +124,25 @@ ul li a:hover{
     border-radius: 2%;
     margin: 0 auto;
     padding:5%;
-    width: 20%;
+    width: 35rem;
     background-color: white;
     border-style: solid;
     border-color: black;
 }
 
-
-
-.main-inicio{
-    margin: 10%;
-}
-
 .datos__nombre input{
     margin: 3%;
     padding: 5%;
-    width: 100%;
+    width: 20rem;
 }
 
 .datos__nombre{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.comentario{
-    width: 100%;
-}
-
-
 .btn input{
     padding: 5%;
-    width: 50%;
+    width: 6rem;
     background-color: white;
     color: rgb(19, 129, 92);
     border-radius: 5%;
@@ -178,7 +153,7 @@ ul li a:hover{
     padding: 2%;
 }
 .tittle{
-    font-size: 500%; 
+    font-size: 4.5rem; 
     text-align: center;
     color:white;
     font-family: Arial, Helvetica, sans-serif;
@@ -187,13 +162,13 @@ ul li a:hover{
 }
 
 .fondo{
-    background-color: rgb(69, 58, 58);
+    background-color:rgb(49, 35, 35)
 }
 
 .mision__div{
     display: flex;
     font-family:Arial, Helvetica, sans-serif;
-    font-size: 250%;
+    font-size: 2rem;
     color: white;
     align-items: center;
     margin: 0 0.5rem;
@@ -203,10 +178,12 @@ ul li a:hover{
 }
 
 .mision2__texto{
+    font-size: 2rem;
     text-align: center;
 }
 
 .mision2__subtitulo{
+    font-size: 5rem;
     text-align: center;
     padding: 5%;
 }
@@ -225,7 +202,7 @@ ul li a:hover{
     border-radius: 15px;
     border-style: solid;
     color: black;
-    gap:15px
+    
 }
 
 .header {
@@ -242,7 +219,7 @@ ul li a:hover{
 .trayectoria__subtitulo{
     color: white;
     text-align: center;
-    font-size: 250%;
+    font-size: 3rem;
 }
 
 .trayectoria__imagen{
@@ -250,7 +227,7 @@ ul li a:hover{
 }
 
 .trayectoria__parrafo{
-    font-size: 170%;
+    font-size: 1.5rem;
     color: white;
     padding: 3%;
     font-family: Arial, Helvetica, sans-serif;
@@ -258,6 +235,9 @@ ul li a:hover{
 }
 
 /* iniciar sesion */
+.main-inicio{
+    margin: 10%;
+}
 
 .formulario{
     margin: auto;
@@ -270,165 +250,48 @@ ul li a:hover{
     border-color: black;
 }
 
-.barra{
-    width: 20rem;
-}
-.datos__input{
-    text-align: center;
-    border-radius: 5%;
-    margin: 0 auto;
-    padding: 5%;
-    width: 20%;
-    background-color:transparent;
+ /* productos*/
+.img-fluid{
+    margin: 2rem;
     border-style: solid;
     border-color: black;
-    margin-bottom: 7.5%;
-}
-
-.datos__name input{
-    margin: 5%;
-    padding: 5%;
-    width: 50%;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-bottom: 5%;
-}
-
-.titulo__inicio{
-    font-size: 350%;
-    text-align: center;
-    background-image: url(../recursos/clavos.jpg);
-    padding: 3%;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-bottom: 5%;
-}
-
-
-/* productos*/
-.productos{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: 
-    "header header header"
-    "titulo__productos titulo__productos  titulo__productos "
-    "productos__empresa1 productos__empresa2 productos__empresa3"
-    "productos__empresa4 productos__empresa5 productos__empresa6"
-    "productos__empresa7 productos__empresa8 productos__empresa9"
-    "footer footer footer";
-}
-.boton{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: green;
-}
-
-
-header{
-    grid-area: header;
+    border-radius: 2rem;
 }
 
 .titulo__productos{
+    color: white;
     grid-area: titulo__productos;
     text-align: center;
     margin: 20px;
 }
 
-.estilo__productos{
-    display: flex;
-    justify-content: center;
-    margin: 1%;
-}
-
-.estilo__productos img{
-    border-radius: 15px;
-    border-style: solid;
-    color: black;
-    width: 50%;
-}
-
-.productos__empresa1{
-    grid-area: productos__empresa1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.productos__empresa2{
-    grid-area: productos__empresa2;
-}
-
-.productos__empresa3{
-    grid-area: productos__empresa3;
-}
-
-.productos__empresa4{
-    grid-area: productos__empresa4;
-}
-
-.productos__empresa5{
-    grid-area: productos__empresa5;
-}
-
-.productos__empresa6{
-    grid-area: productos__empresa6;
-}
-
-.productos__empresa7{
-    grid-area: productos__empresa7;
-}
-
-.productos__empresa8{
-    grid-area: productos__empresa8;
-}
-
-.productos__empresa9{
-    grid-area: productos__empresa9;
-}
-
 /* media */
 
 @media (min-width: 320px) and (max-width: 540px){
-
-.formulario{  
-    width: 15rem;
-}
-
-.barra{
-    width: 10rem;
-}
-   
+    /* index */
     .inicio{
         grid-template-columns: 1fr;
         grid-template-rows: 0.5fr 1fr; 
-        grid-template-areas: 
-        
-        "inicio__titulo "
-        "portada__texto"
-        "portada__texto2";
-        
+         grid-template-areas: 
+            
+         "inicio__titulo "
+         "portada__texto"
+         "portada__texto2";
     }
-    .productos{
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-        "header__navegacion--contacto"
-        "titulo__productos"
-        "productos__empresa1"
-        "productos__empresa2"
-        "productos__empresa3"
-        "productos__empresa4"
-        "productos__empresa5"
-        "productos__empresa6"
-        "productos__empresa7"
-        "productos__empresa8"
-        "productos__empresa9"
-        "footer";
+    .inicio__titulo{
+        font-size: 2rem;
     }
 
-    .mision__div{
-        flex-direction: column;
-
+    /* sobre nosotros */
+    .trayectoria__imagen{
+       display: none;
     }
-    
+    .tittle{
+        font-size: 2rem;
+    }
+    .trayectoria__subtitulo{
+        font-size: 1.5rem
+    }
     .trayectoria{
         flex-direction: column-reverse;
     }
@@ -436,40 +299,85 @@ header{
     .trayectoria__imagen{
         flex-direction: column;
     }
-
-    .header__navegacion--contacto ul{
-        display: flex;
-        justify-content: center;
+    .mision__div--imagen{
+        width: 15rem;
+    }
+    .mision__div{
         flex-direction: column;
+     }
+
+     .mision2__texto{
+        font-size: 1.5rem;
+    }
+
+    .mision2__subtitulo{
+        font-size: 3rem;
+    }
+    
+    /* productos */
+    .img-fluid{
+        width: 15rem;
+    }
+    /* contacto */
+    .formulario{  
+        width: 15rem;
+    }
+
+    .barra{
+        width: 10rem;
     }
 
     .datos__input--contacto{
         align-items: center;
-        width: 60%;
+        width: 20rem;
     }
     .datos__nombre input{
         align-items: center;
         width:70%;
     }
-  
+
     /* iniciar sesion */
-    .datos__input{
-        align-items: center;
-        width: 60%;
+    .formulario{  
+        width: 15rem;
     }
+    
 }
 
 @media (min-width: 541px) and (max-width: 720px){
+    /* index */
     .inicio{
         grid-template-columns: 1fr;
         grid-template-rows: 0.5fr 1fr; 
         grid-template-areas: 
-        "
         "inicio__titulo "
         "portada__texto"
         "portada__texto2";
-        
     }
+    
+    .inicio__titulo{
+        font-size: 4rem;
+    }
+    /* sobre nosotros */
+    .trayectoria__imagen{
+        width: 15rem;
+    }
+
+    .tittle{
+        font-size: 4rem;
+    }
+
+    .trayectoria__subtitulo{
+        font-size: 2rem
+    }
+
+    .trayectoria{
+        flex-direction: column-reverse;
+    }
+
+    .trayectoria__imagen{
+        width: 15rem;
+    }
+    
     .mision{
        
         flex-direction: column;
@@ -481,34 +389,25 @@ header{
 
     }
 
-    .trayectoria{
-        flex-direction: column-reverse;
+    .mision2__subtitulo{
+        font-size: 4rem;
     }
 
+    .mision2__texto{
+        font-size: 1.5rem;
+    }
 
+    /* productos */
+
+    .img-fluid{
+        width: 25rem;
+    }
+
+    /* contacto */
     
-    .productos{
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-areas: 
-        "header__navegacion--contacto header__navegacion--contacto"
-        "titulo__productos titulo__productos"
-        "productos__empresa1 productos__empresa2"
-        "productos__empresa3 productos__empresa4"
-        "productos__empresa5 productos__empresa6"
-        "productos__empresa7 productos__empresa8"
-        "productos__empresa9 productos__empresa9"
-        "footer footer";
-    }
-
-    .header__navegacion--contacto ul{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-    }
-
     .datos__input--contacto{
         align-items: center;
-        width: 50%;
+        width: 25rem;
     }
 
     .datos__nombre input{
@@ -519,11 +418,11 @@ header{
     .comentario{
         width: 50%;
     }
+    
     /* iniciar sesion */
-
-    .datos__input{
-        align-items: center;
-        width: 70%;
+    .formulario{
+        width: 16rem;
+        margin-bottom: auto;
     }
 }
 
