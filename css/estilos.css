@@ -1,269 +1,269 @@
 *{margin: 0px;
  padding: 0px;
 }
-.inicio{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 0.5fr 1fr; 
-    grid-template-areas: 
-    
-    "inicio__titulo inicio__titulo"
-    "portada__texto portada__texto2"
-   ;
-}
-
-ul{
-    list-style-type: none;
-}
-
-li{
-    padding: 1%;
-    display: inline;
-}
-
-a{
-    text-decoration: none;
-    color: white;
-}
-
-.inicio__titulo{
-    grid-area: inicio__titulo;
-    font-size: 5rem;
-    text-align: center;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 2%;
-}
-   
-
-.portada__texto{
-    grid-area: portada__texto;
-    display: flex;
-    flex-direction: column;
-    color: white;
-    font-size: 2rem;
-    text-align: center;
-    margin: 0 0.5rem;
-    animation-name: backInDown;
-    animation-duration: 2s;
-}
-
-.portada__texto2{
-    grid-area: portada__texto2;
-    display: flex;
-    flex-direction: column;
-    text-align: center; 
-    color: white;
-    font-size: 2rem;
-    margin: 0 0.5rem;
-    animation-name: backInDown;
-    animation-duration: 2s;
-}
-
-.publicidad2__titulo{
-    font-size: 2rem;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-
-.inicio__grid{
-    padding: 3%;
-    align-items: center;
-}
-
-.inicio__grid img{
-    display: flex;
-    align-items: center;
-    width: 85%;
-    height: 80%;
-}
-    
-
-.portada__parrafo{
-    font-size: 1.5rem;
-    grid-area: portada__parrafo;
-    display: flex;
-    text-align: center;
-}
-
-
-.footer__disclaimer{
-    text-align: center;
-    align-items: center;
-    background-image: url(../recursos/fondo-gris.jpg);
-    color: white;
-    padding: 1.8%;
-    font-family: Arial, Helvetica, sans-serif;
+    .inicio{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 0.5fr 1fr; 
+        grid-template-areas: 
+        
+        "inicio__titulo inicio__titulo"
+        "portada__texto portada__texto2"
+    ;
     }
-.bg-pink{
-    text-align: right;
-    padding: 1%;
-    background-image: url(../recursos/fondo-gris.jpg);
-    color: white;
-}
 
-.link-nav{
-    color: white;
-}
+    ul{
+        list-style-type: none;
+    }
 
-ul li a:hover{
-    color:rgb(75, 75, 136) ;
-}
-/* contacto */
-.datos__titulo{
-    font-size: 2rem;
-    color: white;
-    text-align: center;
-    font-family:Arial, Helvetica, sans-serif;
-    margin-bottom: 2%;
-}
+    li{
+        padding: 1%;
+        display: inline;
+    }
 
-.datos__input--contacto{
-    text-align: center;
-    border-radius: 2%;
-    margin: 0 auto;
-    padding:5%;
-    width: 35rem;
-    background-color: white;
-    border-style: solid;
-    border-color: black;
-}
+    a{
+        text-decoration: none;
+        color: white;
+    }
 
-.datos__nombre input{
-    margin: 3%;
-    padding: 5%;
-    width: 20rem;
-}
+    .inicio__titulo{
+        grid-area: inicio__titulo;
+        font-size: 5rem;
+        text-align: center;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 2%;
+    }
+    
 
-.datos__nombre{
-    font-family: Arial, Helvetica, sans-serif;
-}
+    .portada__texto{
+        grid-area: portada__texto;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        font-size: 2rem;
+        text-align: center;
+        margin: 0 0.5rem;
+        animation-name: backInDown;
+        animation-duration: 2s;
+    }
 
-.btn input{
-    padding: 5%;
-    width: 6rem;
-    background-color: white;
-    color: rgb(19, 129, 92);
-    border-radius: 5%;
-}
+    .portada__texto2{
+        grid-area: portada__texto2;
+        display: flex;
+        flex-direction: column;
+        text-align: center; 
+        color: white;
+        font-size: 2rem;
+        margin: 0 0.5rem;
+        animation-name: backInDown;
+        animation-duration: 2s;
+    }
+
+    .publicidad2__titulo{
+        font-size: 2rem;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .inicio__grid{
+        padding: 3%;
+        align-items: center;
+    }
+
+    .inicio__grid img{
+        display: flex;
+        align-items: center;
+        width: 85%;
+        height: 80%;
+    }
+        
+
+    .portada__parrafo{
+        font-size: 1.5rem;
+        grid-area: portada__parrafo;
+        display: flex;
+        text-align: center;
+    }
+
+
+    .footer__disclaimer{
+        text-align: center;
+        align-items: center;
+        background-image: url(../recursos/fondo-gris.jpg);
+        color: white;
+        padding: 1.8%;
+        font-family: Arial, Helvetica, sans-serif;
+        }
+    .bg-pink{
+        text-align: right;
+        padding: 1%;
+        background-image: url(../recursos/fondo-gris.jpg);
+        color: white;
+    }
+
+    .link-nav{
+        color: white;
+    }
+
+    ul li a:hover{
+        color:rgb(75, 75, 136) ;
+    }
+    /* contacto */
+    .datos__titulo{
+        font-size: 2rem;
+        color: white;
+        text-align: center;
+        font-family:Arial, Helvetica, sans-serif;
+        margin-bottom: 2%;
+    }
+
+    .datos__input--contacto{
+        text-align: center;
+        border-radius: 2%;
+        margin: 0 auto;
+        padding:5%;
+        width: 35rem;
+        background-color: white;
+        border-style: solid;
+        border-color: black;
+    }
+
+    .datos__nombre input{
+        margin: 3%;
+        padding: 5%;
+        width: 20rem;
+    }
+
+    .datos__nombre{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .btn input{
+        padding: 5%;
+        width: 6rem;
+        background-color: white;
+        color: rgb(19, 129, 92);
+        border-radius: 5%;
+    }
 
 /* sobre-nosotros */
-.imagen1{
-    padding: 2%;
-}
-.tittle{
-    font-size: 4.5rem; 
-    text-align: center;
-    color:white;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 1%;
-    margin-bottom: 3%;
-}
+    .imagen1{
+        padding: 2%;
+    }
+    .tittle{
+        font-size: 4.5rem; 
+        text-align: center;
+        color:white;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 1%;
+        margin-bottom: 3%;
+    }
 
-.fondo{
-    background-color:rgb(49, 35, 35)
-}
+    .fondo{
+        background-color:rgb(49, 35, 35)
+    }
 
-.mision__div{
-    display: flex;
-    font-family:Arial, Helvetica, sans-serif;
-    font-size: 2rem;
-    color: white;
-    align-items: center;
-    margin: 0 0.5rem;
-    animation-name: backInLeft;
-    animation-duration: 2s;
+    .mision__div{
+        display: flex;
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: 2rem;
+        color: white;
+        align-items: center;
+        margin: 0 0.5rem;
+        animation-name: backInLeft;
+        animation-duration: 2s;
 
-}
+    }
 
-.mision2__texto{
-    font-size: 2rem;
-    text-align: center;
-}
+    .mision2__texto{
+        font-size: 2rem;
+        text-align: center;
+    }
 
-.mision2__subtitulo{
-    font-size: 5rem;
-    text-align: center;
-    padding: 5%;
-}
+    .mision2__subtitulo{
+        font-size: 5rem;
+        text-align: center;
+        padding: 5%;
+    }
 
-.trayectoria{
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    margin: 0 0.5rem;
-    animation-name: backInRight;
-    animation-duration: 2s;
-}
+    .trayectoria{
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        margin: 0 0.5rem;
+        animation-name: backInRight;
+        animation-duration: 2s;
+    }
 
-.col{
-   
-    border-radius: 15px;
-    border-style: solid;
-    color: black;
+    .col{
     
-}
+        border-radius: 15px;
+        border-style: solid;
+        color: black;
+        
+    }
 
-.header {
-    color: #36A0FF;
-    font-size: 27px;
-    padding: 10px;
-}
+    .header {
+        color: #36A0FF;
+        font-size: 27px;
+        padding: 10px;
+    }
 
-.bigicon {
-    font-size: 35px;
-    color: #36A0FF;
-}
+    .bigicon {
+        font-size: 35px;
+        color: #36A0FF;
+    }
 
-.trayectoria__subtitulo{
-    color: white;
-    text-align: center;
-    font-size: 3rem;
-}
+    .trayectoria__subtitulo{
+        color: white;
+        text-align: center;
+        font-size: 3rem;
+    }
 
-.trayectoria__imagen{
-    width: 25%;
-}
+    .trayectoria__imagen{
+        width: 25%;
+    }
 
-.trayectoria__parrafo{
-    font-size: 1.5rem;
-    color: white;
-    padding: 3%;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-}
+    .trayectoria__parrafo{
+        font-size: 1.5rem;
+        color: white;
+        padding: 3%;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+    }
 
 /* iniciar sesion */
-.main-inicio{
-    margin: 10%;
-}
+    .main-inicio{
+        margin: 10%;
+    }
 
-.formulario{
-    margin: auto;
-    text-align: center;
-    border-radius: 2%;
-    padding:5rem;
-    width: 30rem;
-    background-color: white;
-    border-style: solid;
-    border-color: black;
-}
+    .formulario{
+        margin: auto;
+        text-align: center;
+        border-radius: 2%;
+        padding:5rem;
+        width: 30rem;
+        background-color: white;
+        border-style: solid;
+        border-color: black;
+    }
 
  /* productos*/
-.img-fluid{
-    margin: 2rem;
-    border-style: solid;
-    border-color: black;
-    border-radius: 2rem;
-}
+    .img-fluid{
+        margin: 2rem;
+        border-style: solid;
+        border-color: black;
+        border-radius: 2rem;
+    }
 
-.titulo__productos{
-    color: white;
-    grid-area: titulo__productos;
-    text-align: center;
-    margin: 20px;
-}
+    .titulo__productos{
+        color: white;
+        grid-area: titulo__productos;
+        text-align: center;
+        margin: 20px;
+    }
 
 /* media */
 
@@ -306,7 +306,7 @@ ul li a:hover{
         flex-direction: column;
      }
 
-     .mision2__texto{
+    .mision2__texto{
         font-size: 1.5rem;
     }
 
@@ -418,7 +418,7 @@ ul li a:hover{
     .comentario{
         width: 50%;
     }
-    
+
     /* iniciar sesion */
     .formulario{
         width: 16rem;
