@@ -1,0 +1,18 @@
+.bg-pink{
+    text-align: right;
+    padding: 1%;
+    background-image: url(../recursos/fondo-gris.jpg);
+        li{
+            padding: 1%;
+            display: inline;
+            a {
+            text-decoration: none;
+            &:hover{
+                color: $color-hover ;
+            }
+             }  
+             .link-nav{
+                color: white;
+            }  
+         }
+    }
