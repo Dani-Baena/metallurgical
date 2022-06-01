@@ -399,3 +399,94 @@
   .formulario {
     width: 16rem;
     margin-bottom: auto; } }
+
+/* map */
+.producto1-card {
+  background-image: url(../recursos/productos/alambre-de-puas.png);
+  background-size: cover;
+  width: 20rem;
+  height: 20rem;
+  margin: 2rem;
+  border-style: solid;
+  border-color: black;
+  border-radius: 2rem; }
+
+.producto2-card {
+  background-image: url(../recursos/productos/clavos.png);
+  background-size: cover;
+  width: 20rem;
+  height: 20rem;
+  margin: 2rem;
+  border-style: solid;
+  border-color: black;
+  border-radius: 2rem; }
+
+.producto3-card {
+  background-image: url(../recursos/productos/clavo-paragua.png);
+  background-size: cover;
+  width: 20rem;
+  height: 20rem;
+  margin: 2rem;
+  border-style: solid;
+  border-color: black;
+  border-radius: 2rem; }
+
+.producto4-card {
+  background-image: url(../recursos/productos/tornillo-autoperforante.png);
+  background-size: cover;
+  width: 20rem;
+  height: 20rem;
+  margin: 2rem;
+  border-style: solid;
+  border-color: black;
+  border-radius: 2rem; }
+
+.producto5-card {
+  background-image: url(../recursos/productos/alambre-galvanizado.png);
+  background-size: cover;
+  width: 20rem;
+  height: 20rem;
+  margin: 2rem;
+  border-style: solid;
+  border-color: black;
+  border-radius: 2rem; }
+
+.producto6-card {
+  background-image: url(../recursos/productos/tornillo-madera.png);
+  background-size: cover;
+  width: 20rem;
+  height: 20rem;
+  margin: 2rem;
+  border-style: solid;
+  border-color: black;
+  border-radius: 2rem; }
+
+.producto7-card {
+  background-image: url(../recursos/productos/bulones.png);
+  background-size: cover;
+  width: 20rem;
+  height: 20rem;
+  margin: 2rem;
+  border-style: solid;
+  border-color: black;
+  border-radius: 2rem; }
+
+.producto8-card {
+  background-image: url(../recursos/productos/clavos-concreto.png);
+  background-size: cover;
+  width: 20rem;
+  height: 20rem;
+  margin: 2rem;
+  border-style: solid;
+  border-color: black;
+  border-radius: 2rem; }
+
+.producto9-card {
+  background-image: url(../recursos/productos/alambre-tejido.png);
+  background-size: cover;
+  width: 20rem;
+  height: 20rem;
+  margin: 2rem;
+  border-style: solid;
+  border-color: black;
+  border-radius: 2rem; }

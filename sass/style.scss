@@ -417,4 +417,33 @@
     }
   }
 
+  /* map */
+
+  $productos:(
+    producto1: alambre-de-puas, 
+    producto2: clavos, 
+    producto3: clavo-paragua,
+    producto4: tornillo-autoperforante,
+    producto5: alambre-galvanizado,
+    producto6: tornillo-madera,
+    producto7: bulones,
+    producto8: clavos-concreto,
+    producto9: alambre-tejido);
+
+  @each $producto, $products in $productos{
+        .#{$producto}-card{
+            background-image: url(../recursos/productos/#{$products}.png);
+            background-size: cover;
+            width: 20rem;
+            height: 20rem;
+            margin: 2rem;
+            border-style: solid;
+            border-color: $color-borde;
+            border-radius: 2rem;
+        }
+  } 
+      
+  
+ 
+
    
