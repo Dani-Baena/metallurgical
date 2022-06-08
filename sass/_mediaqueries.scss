@@ -16,8 +16,15 @@
     .trayectoria__imagen {
       display: none; }
   
-    .tittle {
-      font-size: 2rem; 
+      .mision{
+        .tittle{
+            font-size: 3rem; 
+            text-align: center;
+            color: $color-principal;
+            font-family: $font-principal;
+            padding: 1%;
+            margin-bottom: 3%;
+        }
     }
   
     .trayectoria__subtitulo {
@@ -52,10 +59,6 @@
         width: 15rem;
     }
     /* contacto */
-    .formulario{  
-        width: 15rem;
-    }
-  
     .barra{
         width: 10rem;
     }
@@ -70,8 +73,17 @@
     }
   
     /* iniciar sesion */
-    .formulario{  
-        width: 15rem;
+    .main-inicio{
+        .barra{
+            width: 15rem;
+        }
+        .formulario{
+            margin: auto;
+            text-align: center;
+            border-radius: 2%;
+            padding:5rem;
+            width: 18.5rem;
+        }
     }
     
   }

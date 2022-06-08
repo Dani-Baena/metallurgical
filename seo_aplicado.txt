@@ -1,0 +1,35 @@
+SEO aplicado a mi pagina web
+INDEX
+Agregue los siguientes keywords y description
+Keywords:"html, css, clavos, tornillos, alambres, metalurgica, construccion, inicio mettallurgical"
+Description:"Mettallurgical, obtene tus clavos, alambres y tornillos al mejor precio,calidad y seguridad garantizada"
+Tambien coloque el titulo de manera mas entendible:
+Metallurgical-inicio
+
+SOBRE NOSOTROS
+Agregue los siguientes keywords y description
+Keywords:"html, css, clavos, tornillos, alambres, metalurgica, construccion, metallurgical historia, como se fundo metallurgical"
+Description:"Metallurgical es una empresa fundada en el año 2016 a traves de una idea entre amigos. Nacio en la ciudad de Necochea,Provincia de Buenos Aires."
+Tambien coloque el titulo de manera mas entendible:
+Metallurgical - Sobre Nosotros
+
+INICIAR
+Agregue los siguientes keywords y description
+Keywords:"html, css, clavos, tornillos, alambres, metalurgica, construccion, iniciar sesion metallurgical"
+Description:"Al iniciar sesion podras ver tu historial de compra, tambien te vas a enterar de varios beneficios que saca la empresa"
+Tambien coloque el titulo de manera mas entendible:
+Metallurgical - Iniciar Sesion
+
+CONTACTO
+Agregue los siguientes keywords y description
+Keywords:"html, css, clavos, tornillos, alambres, metalurgica, construccion, problemas metallurgical, dudas en compra mettalurgical, contacto metallurgical"
+Description:"Contacate con nosotros completando las casillas de datos y en menos de 24 hs obtendras tu respuesta!"
+Tambien coloque el titulo de manera mas entendible:
+Metallurgical - Contacto
+
+PRODUCTOS
+Agregue los siguientes keywords y description
+Keywords: "html, css, clavos, tornillos, alambres, metalurgica, construccion, productos metallurgical, ofertas metallurgical"
+Description:"Productos de calidad, clavos, alambres y tornillos al mejor precio!entrega asegurada en tu negocio"
+Tambien coloque el titulo de manera mas entendible:
+Metallurgical - Productos

@@ -121,6 +121,7 @@
             text-align: center;
             border-radius: 2%;
             margin: 0 auto;
+            margin-bottom: 3rem;
             padding:5%;
             width: 35rem;
             background-color: $color-principal;
@@ -238,21 +239,53 @@
     }
 
     /* productos*/
+    /* .titulo__productos{
+        color: black;
+    }
+    .producto1-card{
+        display: flex;
+        margin-bottom: auto;
+        align-items: center;
+        justify-content: center;
+        padding-top: 15rem;
+    }
+    .boton{
+        color: rgb(13, 1, 1);
+        background-color: rgb(218, 186, 186);
+        width: 10rem;
+        height: 4rem;
+        border-style: solid;
+        border-radius: 2rem;
+    } */
     .container{
+        margin-bottom: 32px;
+        &-parrafo{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: wheat;
+        }
         .titulo__productos{
             color:  $color-principal;
-            grid-area: titulo__productos;
             text-align: center;
             margin: 20px;
         }
-
         .img-fluid{
-            margin: 2rem;
-            border-style: solid;
-            border-color: $color-borde;
-            border-radius: 2rem;
+            display: flex;
+            margin-bottom: auto;
+            align-items: center;
+            justify-content: center;
+            padding-top: 15rem;
         }
+        .boton{
+            color: rgb(13, 1, 1);
+            background-color: rgb(218, 186, 186);
+            width: 10rem;
+            height: 4rem;
+            border-style: solid;
+            border-radius: 1rem;}
     }
+
 
 /* media */
 
@@ -267,17 +300,23 @@
       "portada__texto2"; }
   
     .inicio__titulo {
-      font-size: 2rem; 
+      font-size: 3rem; 
     }
   
     /* sobre nosotros */
     .trayectoria__imagen {
       display: none; }
   
-    .tittle {
-      font-size: 2rem; 
+    .mision{
+        .tittle{
+            font-size: 3rem; 
+            text-align: center;
+            color: $color-principal;
+            font-family: $font-principal;
+            padding: 1%;
+            margin-bottom: 3%;
+        }
     }
-  
     .trayectoria__subtitulo {
       font-size: 1.5rem;
     }
@@ -307,13 +346,9 @@
     
     /* productos */
     .img-fluid{
-        width: 15rem;
+        width: 13rem;
     }
     /* contacto */
-    .formulario{  
-        width: 15rem;
-    }
-  
     .barra{
         width: 10rem;
     }
@@ -328,8 +363,17 @@
     }
   
     /* iniciar sesion */
-    .formulario{  
-        width: 15rem;
+    .main-inicio{
+        .barra{
+            width: 15rem;
+        }
+        .formulario{
+            margin: auto;
+            text-align: center;
+            border-radius: 2%;
+            padding:5rem;
+            width: 18.5rem;
+        }
     }
     
   }
@@ -413,7 +457,6 @@
     /* iniciar sesion */
     .formulario{
         width: 16rem;
-        margin-bottom: auto;
     }
   }
 
@@ -437,6 +480,7 @@
             width: 20rem;
             height: 20rem;
             margin: 2rem;
+            padding: 3rem;
             border-style: solid;
             border-color: $color-borde;
             border-radius: 2rem;
