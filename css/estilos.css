@@ -9,7 +9,7 @@
     .bg-pink li a {
       text-decoration: none; }
       .bg-pink li a:hover {
-        color: #4b4b88; }
+        color: #ffd8d8; }
     .bg-pink li .link-nav {
       color: white; }
 
@@ -124,20 +124,24 @@
   margin: 0px;
   padding: 0px; }
 
+.fondo {
+  background-color: #312323; }
+
+/* barra de navegacion */
 .bg-pink {
-  text-align: right;
-  padding: 1%;
   background-image: url(../recursos/fondo-gris.jpg); }
   .bg-pink li {
-    padding: 1%;
-    display: inline; }
+    margin: 0.3rem;
+    display: inline;
+    font-size: 1rem; }
     .bg-pink li a {
       text-decoration: none; }
       .bg-pink li a:hover {
-        color: #4b4b88; }
+        color: #ffd8d8; }
     .bg-pink li .link-nav {
       color: white; }
 
+/* inicio */
 .inicio {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -167,7 +171,7 @@
   font-size: 2rem;
   text-align: center;
   margin: 0 0.5rem;
-  animation-name: backInDown;
+  animation-name: fadeIn;
   animation-duration: 2s; }
   .portada__parrafo {
     font-family: Arial, Helvetica, sans-serif;
@@ -184,8 +188,8 @@
   color: white;
   font-size: 2rem;
   margin: 0 0.5rem;
-  animation-name: backInDown;
-  animation-duration: 2s; }
+  animation-name: fadeIn;
+  animation-duration: 1s; }
   .publicidad__titulo {
     font-size: 2rem;
     display: flex;
@@ -196,45 +200,46 @@
 
 .footer__disclaimer {
   text-align: center;
-  align-items: center;
   background-image: url(../recursos/fondo-gris.jpg);
   color: white;
   padding: 1.8%;
   font-family: Arial, Helvetica, sans-serif; }
 
 /* contacto */
-.datos__titulo {
-  font-size: 2rem;
-  color: white;
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  margin-bottom: 2%; }
-
-.datos__input--contacto {
-  text-align: center;
-  border-radius: 2%;
-  margin: 0 auto;
-  margin-bottom: 3rem;
-  padding: 5%;
-  width: 35rem;
-  background-color: white;
-  border-style: solid;
-  border-color: black; }
-
-.datos__nombre {
-  font-family: Arial, Helvetica, sans-serif; }
-
-.datos__nombre input {
-  margin: 3%;
-  padding: 5%;
-  width: 20rem; }
-
-.datos .btn input {
-  padding: 5%;
-  width: 6rem;
-  background-color: #1a921a;
-  color: white;
-  border-radius: 5%; }
+.datos {
+  background-color: white; }
+  .datos__titulo {
+    font-size: 2rem;
+    color: white;
+    background-color: #312323;
+    padding: 3rem;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 2%; }
+  .datos__input--contacto {
+    text-align: center;
+    border-radius: 2%;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    padding: 5%;
+    width: 35rem;
+    background-color: white;
+    border-style: solid;
+    border-color: black; }
+  .datos__nombre {
+    font-family: Arial, Helvetica, sans-serif; }
+  .datos__nombre input {
+    margin: 3%;
+    padding: 5%;
+    width: 20rem; }
+  .datos .btn input {
+    padding: 5%;
+    width: 6rem;
+    background-color: #0e5871;
+    color: white;
+    border-radius: 5%; }
+  .datos .fondo-contacto {
+    background-color: white; }
 
 /* sobre-nosotros */
 .mision .tittle {
@@ -267,16 +272,14 @@
   font-size: 2rem;
   text-align: center; }
 
-.fondo {
-  background-color: #312323; }
-
 .trayectoria {
   display: flex;
   justify-content: right;
   align-items: center;
   margin: 0 0.5rem;
   animation-name: backInRight;
-  animation-duration: 2s; }
+  animation-duration: 2s;
+  margin-bottom: 3rem; }
   .trayectoria__subtitulo {
     color: white;
     text-align: center;
@@ -304,51 +307,108 @@
     border-color: black; }
   .main-inicio .btn {
     border-color: black;
-    background-color: #1a921a; }
+    background-color: #0e5871; }
 
 /* productos*/
-/* .titulo__productos{
-        color: black;
-    }
-    .producto1-card{
-        display: flex;
-        margin-bottom: auto;
-        align-items: center;
-        justify-content: center;
-        padding-top: 15rem;
-    }
-    .boton{
-        color: rgb(13, 1, 1);
-        background-color: rgb(218, 186, 186);
-        width: 10rem;
-        height: 4rem;
-        border-style: solid;
-        border-radius: 2rem;
-    } */
-.container {
-  margin-bottom: 32px; }
-  .container-parrafo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: wheat; }
-  .container .titulo__productos {
-    color: white;
-    text-align: center;
-    margin: 20px; }
-  .container .img-fluid {
-    display: flex;
-    margin-bottom: auto;
-    align-items: center;
-    justify-content: center;
-    padding-top: 15rem; }
-  .container .boton {
-    color: #0d0101;
-    background-color: #dababa;
-    width: 10rem;
-    height: 4rem;
-    border-style: solid;
-    border-radius: 1rem; }
+.container .my-2 {
+  background-color: #0e5871;
+  color: white;
+  border: none;
+  transition: 0.5s; }
+  .container .my-2:hover {
+    background-color: white;
+    color: black; }
+
+.container .card-text {
+  text-align: center;
+  color: white;
+  font-size: 1.2rem;
+  font-family: sans-serif; }
+
+.container .btn-group {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  width: 10rem;
+  height: 4rem;
+  transition: 0.5s; }
+
+.container .btn-size {
+  color: black;
+  font-size: 1rem;
+  font-family: sans-serif; }
+
+.container .btn-group:hover {
+  background-color: #ffd8d8; }
+
+.container .color-bloque {
+  color: white; }
+
+.container .card-body {
+  background-color: #302f2f; }
+
+.producto1-card {
+  background-image: url(../recursos/productos/alambre-de-puas.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 19.5rem; }
+
+.producto2-card {
+  background-image: url(../recursos/productos/clavos.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 19.5rem; }
+
+.producto3-card {
+  background-image: url(../recursos/productos/clavo-paragua.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 19.5rem; }
+
+.producto4-card {
+  background-image: url(../recursos/productos/tornillo-autoperforante.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 19.5rem; }
+
+.producto5-card {
+  background-image: url(../recursos/productos/alambre-galvanizado.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 19.5rem; }
+
+.producto6-card {
+  background-image: url(../recursos/productos/tornillo-madera.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 19.5rem; }
+
+.producto7-card {
+  background-image: url(../recursos/productos/bulones.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 19.5rem; }
+
+.producto8-card {
+  background-image: url(../recursos/productos/clavos-concreto.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 19.5rem; }
+
+.producto9-card {
+  background-image: url(../recursos/productos/alambre-tejido.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 19.5rem; }
 
 /* media */
 @media (min-width: 320px) and (max-width: 540px) {
@@ -359,6 +419,8 @@
     grid-template-areas: "inicio__titulo " "portada__texto" "portada__texto2"; }
   .inicio__titulo {
     font-size: 3rem; }
+  .publicidad__titulo {
+    font-size: 1.5rem; }
   /* sobre nosotros */
   .trayectoria__imagen {
     display: none; }
@@ -383,9 +445,6 @@
     font-size: 1.5rem; }
   .mision__subtitulo {
     font-size: 3rem; }
-  /* productos */
-  .img-fluid {
-    width: 13rem; }
   /* contacto */
   .barra {
     width: 10rem; }
@@ -433,9 +492,6 @@
     font-size: 4rem; }
   .mision__texto {
     font-size: 1.5rem; }
-  /* productos */
-  .img-fluid {
-    width: 25rem; }
   /* contacto */
   .datos__input--contacto {
     align-items: center;
@@ -448,103 +504,3 @@
   /* iniciar sesion */
   .formulario {
     width: 16rem; } }
-
-/* map */
-.producto1-card {
-  background-image: url(../recursos/productos/alambre-de-puas.png);
-  background-size: cover;
-  width: 20rem;
-  height: 20rem;
-  margin: 2rem;
-  padding: 3rem;
-  border-style: solid;
-  border-color: black;
-  border-radius: 2rem; }
-
-.producto2-card {
-  background-image: url(../recursos/productos/clavos.png);
-  background-size: cover;
-  width: 20rem;
-  height: 20rem;
-  margin: 2rem;
-  padding: 3rem;
-  border-style: solid;
-  border-color: black;
-  border-radius: 2rem; }
-
-.producto3-card {
-  background-image: url(../recursos/productos/clavo-paragua.png);
-  background-size: cover;
-  width: 20rem;
-  height: 20rem;
-  margin: 2rem;
-  padding: 3rem;
-  border-style: solid;
-  border-color: black;
-  border-radius: 2rem; }
-
-.producto4-card {
-  background-image: url(../recursos/productos/tornillo-autoperforante.png);
-  background-size: cover;
-  width: 20rem;
-  height: 20rem;
-  margin: 2rem;
-  padding: 3rem;
-  border-style: solid;
-  border-color: black;
-  border-radius: 2rem; }
-
-.producto5-card {
-  background-image: url(../recursos/productos/alambre-galvanizado.png);
-  background-size: cover;
-  width: 20rem;
-  height: 20rem;
-  margin: 2rem;
-  padding: 3rem;
-  border-style: solid;
-  border-color: black;
-  border-radius: 2rem; }
-
-.producto6-card {
-  background-image: url(../recursos/productos/tornillo-madera.png);
-  background-size: cover;
-  width: 20rem;
-  height: 20rem;
-  margin: 2rem;
-  padding: 3rem;
-  border-style: solid;
-  border-color: black;
-  border-radius: 2rem; }
-
-.producto7-card {
-  background-image: url(../recursos/productos/bulones.png);
-  background-size: cover;
-  width: 20rem;
-  height: 20rem;
-  margin: 2rem;
-  padding: 3rem;
-  border-style: solid;
-  border-color: black;
-  border-radius: 2rem; }
-
-.producto8-card {
-  background-image: url(../recursos/productos/clavos-concreto.png);
-  background-size: cover;
-  width: 20rem;
-  height: 20rem;
-  margin: 2rem;
-  padding: 3rem;
-  border-style: solid;
-  border-color: black;
-  border-radius: 2rem; }
-
-.producto9-card {
-  background-image: url(../recursos/productos/alambre-tejido.png);
-  background-size: cover;
-  width: 20rem;
-  height: 20rem;
-  margin: 2rem;
-  padding: 3rem;
-  border-style: solid;
-  border-color: black;
-  border-radius: 2rem; }

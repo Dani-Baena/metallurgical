@@ -5,34 +5,38 @@
 
 *{margin: 0px;
   padding: 0px;
-}
-.bg-pink{
-    text-align: right;
-    padding: 1%;
-    background-image: url(../recursos/fondo-gris.jpg);
-        li{
-            padding: 1%;
-            display: inline;
-            a {
-            text-decoration: none;
-            &:hover{
-                color: $color-hover ;
+}       
+    
+        .fondo{
+            background-color: $color-fondo;
             }
-             }  
-             .link-nav{
-                color: white;
-            }  
-         }
-    }    
-
+        
+        /* barra de navegacion */
+        .bg-pink{
+            background-image: url(../recursos/fondo-gris.jpg);
+                li{
+                    margin: 0.3rem;
+                    display: inline;
+                    font-size: 1rem;
+                    a {
+                    text-decoration: none;
+                    &:hover{
+                        color: $color-hover ;
+                    }
+                    }  
+                    .link-nav{
+                        color: white;
+                    }  
+                }
+            }    
+        /* inicio */
        .inicio{
            display: grid;
            grid-template-columns: repeat(2, 1fr);
            grid-template-rows: 0.5fr 1fr; 
            grid-template-areas: 
            "inicio__titulo inicio__titulo"
-           "portada__texto portada__texto2"
-       ;
+           "portada__texto portada__texto2";
        &__titulo{
         grid-area: inicio__titulo;
         font-size: 5rem;
@@ -63,7 +67,7 @@
            font-size: 2rem;
            text-align: center;
            margin: 0 0.5rem;
-           animation-name: backInDown;
+           animation-name: fadeIn;
            animation-duration: 2s;
 
            &__parrafo{
@@ -83,8 +87,8 @@
            color:  $color-principal;
            font-size: 2rem;
            margin: 0 0.5rem;
-           animation-name: backInDown;
-           animation-duration: 2s;
+           animation-name: fadeIn;
+           animation-duration: 1s;
 
            &__titulo{
             font-size: 2rem;
@@ -100,7 +104,6 @@
 
        .footer__disclaimer{
            text-align: center;
-           align-items: center;
            background-image: url(../recursos/fondo-gris.jpg);
            color: $color-principal;
            padding: 1.8%;
@@ -109,9 +112,12 @@
 
     /* contacto */
     .datos{
+        background-color: white;
         &__titulo{
             font-size: 2rem;
             color:  $color-principal;
+            background-color: $color-fondo;
+            padding: 3rem;
             text-align: center;
             font-family: $font-principal;
             margin-bottom: 2%;
@@ -138,12 +144,16 @@
             padding: 5%;
             width: 20rem;
         }
+
         .btn input{
             padding: 5%;
             width: 6rem;
-            background-color: $color-btn;
+            background-color: $color-boton;
             color: $color-principal;
             border-radius: 5%;
+        }
+        .fondo-contacto{
+            background-color: $color-principal;
         }
     }
 
@@ -186,10 +196,6 @@
         }
     }
    
-     .fondo{
-        background-color: $color-fondo
-    }
-
     .trayectoria{
         display: flex;
         justify-content: right;
@@ -197,6 +203,7 @@
         margin: 0 0.5rem;
         animation-name: backInRight;
         animation-duration: 2s;
+        margin-bottom: 3rem;
 
         &__subtitulo{
             color:  $color-principal;
@@ -234,59 +241,74 @@
 
         .btn{
             border-color: $color-borde;
-            background-color: $color-btn;
+            background-color: $color-boton;
         }
     }
 
     /* productos*/
-    /* .titulo__productos{
-        color: black;
-    }
-    .producto1-card{
-        display: flex;
-        margin-bottom: auto;
-        align-items: center;
-        justify-content: center;
-        padding-top: 15rem;
-    }
-    .boton{
-        color: rgb(13, 1, 1);
-        background-color: rgb(218, 186, 186);
-        width: 10rem;
-        height: 4rem;
-        border-style: solid;
-        border-radius: 2rem;
-    } */
     .container{
-        margin-bottom: 32px;
-        &-parrafo{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: wheat;
+        .my-2{
+            background-color: $color-boton;
+            color: $color-principal;
+            border: none;
+            transition: 0.5s;
+        
+        &:hover{
+            background-color: $color-principal;
+            color: $color-borde;
         }
-        .titulo__productos{
-            color:  $color-principal;
+      }
+        .card-text{
             text-align: center;
-            margin: 20px;
+            color: $color-principal;
+            font-size: 1.2rem;
+            font-family: $font-secundario;
         }
-        .img-fluid{
+        .btn-group{
             display: flex;
-            margin-bottom: auto;
-            align-items: center;
             justify-content: center;
-            padding-top: 15rem;
-        }
-        .boton{
-            color: rgb(13, 1, 1);
-            background-color: rgb(218, 186, 186);
+            background-color: $color-principal;
             width: 10rem;
             height: 4rem;
-            border-style: solid;
-            border-radius: 1rem;}
-    }
+            transition: 0.5s;
+        }     
+        .btn-size{
+            color: $color-borde;
+            font-size: 1rem;
+            font-family: $font-secundario;
+        }  
+        .btn-group:hover{
+            background-color: $color-hover;
+        }
 
+        .color-bloque{
+            color: $color-principal;
+        }
+        .card-body{
+            background-color: $color-card;
+        }
+ }
+    $productos:(
+        producto1: alambre-de-puas, 
+        producto2: clavos, 
+        producto3: clavo-paragua,
+        producto4: tornillo-autoperforante,
+        producto5: alambre-galvanizado,
+        producto6: tornillo-madera,
+        producto7: bulones,
+        producto8: clavos-concreto,
+        producto9: alambre-tejido);
 
+    @each $producto, $products in $productos{
+            .#{$producto}-card{
+                background-image: url(../recursos/productos/#{$products}.png);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                height: 19.5rem;
+            }
+    } 
+ 
 /* media */
 
 @media (min-width: 320px) and (max-width: 540px) {
@@ -301,6 +323,9 @@
   
     .inicio__titulo {
       font-size: 3rem; 
+    }
+    .publicidad__titulo{
+        font-size: 1.5rem;
     }
   
     /* sobre nosotros */
@@ -327,7 +352,7 @@
   
     .trayectoria__imagen {
       flex-direction: column; 
-      }
+      }   
   
     .imagen1 {
       width: 15rem; 
@@ -342,11 +367,6 @@
   
     .mision__subtitulo{
         font-size: 3rem;
-    }
-    
-    /* productos */
-    .img-fluid{
-        width: 13rem;
     }
     /* contacto */
     .barra{
@@ -431,13 +451,6 @@
     .mision__texto{
         font-size: 1.5rem;
     }
-  
-    /* productos */
-  
-    .img-fluid{
-        width: 25rem;
-    }
-  
     /* contacto */
     
     .datos__input--contacto{
@@ -460,32 +473,7 @@
     }
   }
 
-  /* map */
-
-  $productos:(
-    producto1: alambre-de-puas, 
-    producto2: clavos, 
-    producto3: clavo-paragua,
-    producto4: tornillo-autoperforante,
-    producto5: alambre-galvanizado,
-    producto6: tornillo-madera,
-    producto7: bulones,
-    producto8: clavos-concreto,
-    producto9: alambre-tejido);
-
-  @each $producto, $products in $productos{
-        .#{$producto}-card{
-            background-image: url(../recursos/productos/#{$products}.png);
-            background-size: cover;
-            width: 20rem;
-            height: 20rem;
-            margin: 2rem;
-            padding: 3rem;
-            border-style: solid;
-            border-color: $color-borde;
-            border-radius: 2rem;
-        }
-  } 
+  
       
   
  
